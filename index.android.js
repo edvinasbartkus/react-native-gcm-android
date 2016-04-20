@@ -68,6 +68,13 @@ class GcmAndroid {
     _notifHandlers.delete(handler);
   }
 
+  static popInitialNotification() {
+    if(this.data != null || this.data != undefined){
+      return this.data.pop();
+    }
+    return null
+  }
+  
   constructor(data) {
     this.data = data;
   }
