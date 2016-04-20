@@ -1,14 +1,14 @@
 {
-  "name": "react-native-gcm-android",
-  "version": "0.1.9",
+  "name": "react-native-prayerstream-gcm",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oney/react-native-gcm-android.git"
+    "url": "git+https://github.com/johndrkurtcom/react-native-gcm-android.git"
   },
   "nativePackage": true,
-  "description": "GCM for React Native Android",
-  "author": "Oney <appdevoney@gmail.com>",
-  "homepage": "https://github.com/oney/react-native-gcm-android",
+  "description": "GCM for React Native Android modified",
+  "author": "",
+  "homepage": "https://github.com/johndrkurtcom/react-native-gcm-android",
   "keywords": [
     "react-component",
     "react-native",
