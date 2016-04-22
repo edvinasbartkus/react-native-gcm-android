@@ -1,6 +1,6 @@
 {
   "name": "react-native-prayerstream-gcm",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johndrkurtcom/react-native-gcm-android.git"
