@@ -41,6 +41,8 @@ import android.app.NotificationManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
 
+import me.leolin.shortcutbadger.ShortcutBadger;
+
 public class GcmModule extends ReactContextBaseJavaModule implements LifecycleEventListener {
     private final static String TAG = GcmModule.class.getCanonicalName();
     private Intent mIntent;
@@ -189,6 +191,15 @@ public class GcmModule extends ReactContextBaseJavaModule implements LifecycleEv
         }
     }
 
+    @ReactMethod
+    public void setBadgeCount(int Count){
+        Context context = getReactApplicationContext();
+        if(Count > 0){
+            ShortcutBadger.applyCount(context, Count);
+        }else{
+            ShortcutBadger.removeCount(context);
+        }
+    }
     @ReactMethod
     public void createNotification(ReadableMap infos) {
         Resources resources = getReactApplicationContext().getResources();

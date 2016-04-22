@@ -75,11 +75,15 @@ class GcmAndroid {
     return null
   }
   
+  static setBadgeCount(count){
+    GcmModule.setBadgeCount(count);
+  }
+
   constructor(data) {
     this.data = data;
   }
 }
-console.log('GcmAndroid.launchNotification internal', GcmAndroid.launchNotification);
+// console.log('GcmAndroid.launchNotification internal', GcmAndroid.launchNotification);
 if (GcmModule.launchNotification) {
   GcmAndroid.launchNotification = JSON.parse(GcmModule.launchNotification);
 }
